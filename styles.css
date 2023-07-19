@@ -5,4 +5,67 @@ light-blue - #78a7c6;
 dark-blue - #134d71;
 white - #ffffff;
 black - #000000;
+gradient (#1e4f70, #f7e4bf);
 */
+
+* {
+  font-family: 'Quicksand', sans-serif;   
+}
+
+body {
+ 
+  background: linear-gradient(#134d71,#78a7c6,#f7e4bf);
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.title {
+  text-align: center;
+  color: #ffffff;
+  margin-top: 60px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #ffffff;
+  margin-top: 80px;
+  
+}
+
+.the-form {
+ 
+  margin-left: 430px;
+  background-color: white;
+  height: 80px;
+  width: 550px;
+}
+
+
+#affirmation {
+  margin-right: 10px;
+}
+
+.radio-button-1 {
+  position: relative;
+  left: 100px;
+}
+
+.radio-button-1-text {
+  margin-left: 100px;
+}
+
+.radio-button-2 {
+  margin-left: 100px;
+}
+
+.radio-button-2-text {
+
+}
+
+.receive-message {
+  margin-top: 20px;
+  margin-left: 200px;
+  background-color: #134d71;
+  color: white;
+}
