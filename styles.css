@@ -5,4 +5,87 @@ light-blue - #78a7c6;
 dark-blue - #134d71;
 white - #ffffff;
 black - #000000;
+gradient (#1e4f70, #f7e4bf);
 */
+
+* {
+  font-family: 'Quicksand', sans-serif;   
+}
+
+body {
+ 
+  background: linear-gradient(#134d71,#78a7c6,#f7e4bf);
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.title {
+  text-align: center;
+  color: #ffffff;
+  margin-top: 60px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #ffffff;
+  margin-top: 80px;  
+}
+
+.the-form {
+ margin-top: 20px;
+  margin-left: 460px;
+  background-color: white;
+  height: 90px;
+  width: 550px;
+  border-radius: 10px;
+}
+
+.radio-button-1 {
+  margin-top: 10px;
+  position: relative;
+  left: 100px;
+}
+
+.radio-button-1-text {
+  
+  margin-left: 110px;
+  font-style: italic;
+}
+
+.radio-button-2 {
+  margin-left: 165px;
+  
+}
+
+.radio-button-2-text {
+ font-style: italic;
+ margin-left: 10px;
+
+}
+
+.receive-message {
+  height: 30px;
+  width: 180px;
+  border-radius: 6px;
+  margin-top: 20px;
+  margin-left: 200px;
+  background-color: #134d71;
+  color: white;
+  font-size: 17px;
+}
+
+main {
+display: flex;
+justify-content: center;
+ height: 150px;
+ width: 800px;
+ background-color: #ffffff;
+ margin-left: 340px;
+ margin-top: 100px;
+ border-radius: 10px;
+}
+
+.meditation-bell {
+  transform: scale(0.6)
+}
