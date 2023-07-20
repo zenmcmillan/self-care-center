@@ -67,7 +67,7 @@ body {
 .receive-message {
   height: 30px;
   width: 180px;
-  border-radius: 10px;
+  border-radius: 6px;
   margin-top: 20px;
   margin-left: 200px;
   background-color: #134d71;
@@ -76,11 +76,16 @@ body {
 }
 
 main {
+display: flex;
+justify-content: center;
  height: 150px;
  width: 800px;
  background-color: #ffffff;
  margin-left: 340px;
  margin-top: 100px;
  border-radius: 10px;
- background-image: url("assets/meditative.svg")
+}
+
+.meditation-bell {
+  transform: scale(0.6)
 }
