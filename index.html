@@ -8,24 +8,24 @@
       <h1 class="title">✨ Self Care Center ✨</h1>
       <h2 class="subtitle">Which type of message?</h2>
     
-        <form class="the-form">
+        <div class="the-form">
           <div class="form-container">
-          <label class="affirmations-text">affirmation
-            <input class="radio-button-affirmations" type="radio"id="affirmations" name="option" value="affirmations">
+          <label for="affirmations" class="affirmations-text">affirmation
+            <input class="radio-button-affirmations" type="radio"id="affirmations" name="options" value="affirmations">
              </label>
-             <label class="mantras-text">mantra
-            <input class="radio-button-mantras" type="radio" id="mantras"name="option" value="mantra">
+             <label for="mantras" class="mantras-text">mantra
+            <input class="radio-button-mantras" type="radio" id="mantras"name="options" value="mantra">
            </label>
           </div>
-            <button onclick="checkRadioButtons()" class="receive-message-button">Receive Message</button>
-
-       </form>
+            <button type="submit" class="receive-message-button">Receive Message</button>
+        </div>
        </body>
       <main>
         <img src="assets/meditate.svg" alt="meditation bell" class="meditation-bell">
       </main>
       
     <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="data.js"></script>
   </body>
 </html>
 
