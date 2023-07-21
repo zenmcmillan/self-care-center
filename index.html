@@ -9,12 +9,18 @@
       <h2 class="subtitle">Which type of message?</h2>
     
         <form class="the-form">
-            <input class="radio-button-affirmations" type="radio" name="option" value="affirmations">
-            <label class="radio-button-1-text" for="radio">affirmation </label>
-            <input class="radio-button-mantras" type="radio" name="option" value="mantra">
-            <label class="radio-button-2-text"for="radio">mantra</label><br>
-            <button class="receive-message-button">Receive Message</button>
+          <div class="form-container">
+          <label class="affirmations-text">affirmation
+            <input class="radio-button-affirmations" type="radio"id="affirmations" name="option" value="affirmations">
+             </label>
+             <label class="mantras-text">mantra
+            <input class="radio-button-mantras" type="radio" id="mantras"name="option" value="mantra">
+           </label>
+          </div>
+            <button onclick="checkRadioButtons()" class="receive-message-button">Receive Message</button>
+
        </form>
+       </body>
       <main>
         <img src="assets/meditate.svg" alt="meditation bell" class="meditation-bell">
       </main>

@@ -33,46 +33,46 @@ body {
 }
 
 .the-form {
- margin-top: 20px;
+
   margin-left: 460px;
   background-color: white;
   height: 90px;
   width: 550px;
-  border-radius: 10px;
+  border-radius: 10px;  
 }
+
+.affirmations-text {
+  font-style: italic;
+  margin-top: 15px;
+  margin-left: 90px;
+}
+
 
 .radio-button-affirmations {
-  margin-top: 10px;
-  position: relative;
-  left: 100px;
+  float: left;
+  margin-right: 12px;
 }
 
-.radio-button-1-text {
-  
-  margin-left: 110px;
+.mantras-text {
   font-style: italic;
-}
+  margin-left: 160px;
+  margin-top: 15px;
+ }
 
-.radio-button-mantras {
-  margin-left: 165px;
-  
-}
-
-.radio-button-2-text {
- font-style: italic;
- margin-left: 10px;
-
+ .radio-button-mantras {
+  float: left;
+  margin-right: 12px;
 }
 
 .receive-message-button {
   height: 30px;
-  width: 180px;
+  width: 190px;
   border-radius: 6px;
-  margin-top: 20px;
-  margin-left: 200px;
   background-color: #134d71;
   color: white;
   font-size: 17px;
+  margin-left: 180px;
+  margin-top: 10px;
 }
 
 main {
@@ -89,3 +89,11 @@ justify-content: center;
 .meditation-bell {
   transform: scale(0.6)
 }
+
+.form-container {
+  display: flex;
+  margin-top: 10px;
+  height: 40px;
+
+}
+

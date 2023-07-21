@@ -2,10 +2,11 @@
 
 var messageButton = document.querySelector('.receive-message-button');
 var radioButtons = document.querySelectorAll('input[name="option"]');
-
 // event listeners
+//radioButtons.addEventListener('click',)
 messageButton.addEventListener('click', function () {
-
+  
+checkRadioButtons()
 });
 
 var currentQuote; //data model
@@ -17,11 +18,24 @@ var currentQuote; //data model
 
 //create function that
 
-function getRandomIndex(array) {
-  return Math.floor(Math.random() * array.length);
+function checkRadioButtons(affirmations) {
+  for (var i = 0; i < radioButtons.length; i++) {
+    if (radioButtons[i].checked && radioButtons[i].id === 'affirmations') {
+    currentQuote = getRandomQuote(affirmations)
+    console.log("Hey")
+    }
+    
+  }
+  return currentQuote
 }
 
 function getRandomQuote(array) {
-  currentQuote = array[getRandomIndex(array)];
-  return currentQuote
+  var quote
+  quote = array[getRandomIndex(array)];//
+  return quote
+  //updates data model by return quote
 }
+
+function getRandomIndex(array) {
+  return Math.floor(Math.random() * array.length);
+}//returns a nubmer
