@@ -1,20 +1,24 @@
 // query selectors
 
-// var affirmationsRadioButton = document.querySelector('.radio-button-affirmations');
-// var mantraRadioButton = document.querySelector('.radio-button-mantras');
 var messageButton = document.querySelector('.receive-message-button');
 var radioButtons = document.querySelectorAll('.radio-buttons');
 var meditationBell = document.querySelector('.meditation-bell');
 var mainSection = document.querySelector('.quote-space');
 
+// data model
+
 var currentQuote;
 
+// event listeners
 messageButton.addEventListener('click', function() {
   chooseQuote();
   renderQuote(currentQuote);
 });
 
+// event handlers
+
 function renderQuote(quote) {
+  
   meditationBell.classList.add('hidden');
   
   mainSection.innerHTML = '';
@@ -41,8 +45,8 @@ function getRandomQuote(array) {
   var quote
   quote = array[getRandomIndex(array)]
   return quote
-} // return a random quote in the array array[i]
+} 
 
 function getRandomIndex(array) {
   return Math.floor(Math.random() * array.length)
-}// return a number that is within the length of the array
+}
