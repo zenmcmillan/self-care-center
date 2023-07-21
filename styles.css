@@ -32,7 +32,7 @@ body {
   margin-top: 80px;  
 }
 
-.the-form {
+.middle {
 
   margin-left: 460px;
   background-color: white;
@@ -90,7 +90,7 @@ justify-content: center;
   transform: scale(0.6)
 }
 
-.form-container {
+.middle-container {
   display: flex;
   margin-top: 10px;
   height: 40px;
