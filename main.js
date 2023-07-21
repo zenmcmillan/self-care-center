@@ -23,8 +23,8 @@ function renderQuote(quote) {
   
   mainSection.innerHTML = '';
 
-  mainSection.innerHTML = `
-  <main>
+  mainSection.innerHTML = 
+  `<main>
    <p class="quote">${quote}</p>     
   </main>`
 }
