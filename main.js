@@ -4,14 +4,28 @@
 // var mantraRadioButton = document.querySelector('.radio-button-mantras');
 var messageButton = document.querySelector('.receive-message-button');
 var radioButtons = document.querySelectorAll('.radio-buttons');
+var meditationBell = document.querySelector('.meditation-bell');
+var mainSection = document.querySelector('main');
 
 var currentQuote;
 
 messageButton.addEventListener('click', function() {
-  getValue()
+  chooseQuote();
+  renderQuote(currentQuote);
 });
 
-function getValue() {
+function renderQuote(quote) {
+  meditationBell.classList.add('hidden');
+  mainSection.classList.add('quote')
+  mainSection.innerHTML = '';
+
+  mainSection.innerHTML = `
+  <main>
+   <p>${quote}</p>     
+  </main>`
+}
+
+function chooseQuote() {
   for (var i = 0; i < radioButtons.length; i++) {
     if (radioButtons[i].checked && radioButtons[i].value === 'affirmations') {
        currentQuote = getRandomQuote(affirmations)
