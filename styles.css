@@ -75,7 +75,7 @@ body {
   margin-top: 10px;
 }
 
-main {
+.quote-space {
 display: flex;
 justify-content: center;
  height: 150px;
@@ -97,13 +97,9 @@ justify-content: center;
 }
 
 .quote {
-  font-size: 15px;
-  height: 150px;
- width: 800px;
- background-color: #ffffff;
- margin-left: 340px;
- margin-top: 100px;
- border-radius: 10px;
+  font-size: 25px;
+  margin-top: 52px;
+  text-align: center;
 }
 
 .hidden {

@@ -5,7 +5,7 @@
 var messageButton = document.querySelector('.receive-message-button');
 var radioButtons = document.querySelectorAll('.radio-buttons');
 var meditationBell = document.querySelector('.meditation-bell');
-var mainSection = document.querySelector('main');
+var mainSection = document.querySelector('.quote-space');
 
 var currentQuote;
 
@@ -16,12 +16,12 @@ messageButton.addEventListener('click', function() {
 
 function renderQuote(quote) {
   meditationBell.classList.add('hidden');
-  mainSection.classList.add('quote')
+  
   mainSection.innerHTML = '';
 
   mainSection.innerHTML = `
   <main>
-   <p>${quote}</p>     
+   <p class="quote">${quote}</p>     
   </main>`
 }
 
