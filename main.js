@@ -4,18 +4,34 @@ var messageButton = document.querySelector('.receive-message-button');
 var radioButtons = document.querySelectorAll('.radio-buttons');
 var meditationBell = document.querySelector('.meditation-bell');
 var mainSection = document.querySelector('.quote-space');
+var loginContainer = document.querySelector('.login-container');
+var loginInputs = document.querySelectorAll('.login');
+var page = document.querySelectorAll('.page')
+var body = document.querySelector('body');
 
 // data model
 
 var currentQuote;
 
 // event listeners
+window.addEventListener('load', function() {
+ hideNonLoginClasses()
+});
+
+function hideNonLoginClasses() {
+  for (var i = 0; i < page.length; i++) {
+    page[i].classList.add('hidden');
+  }
+}
+
 messageButton.addEventListener('click', function() {
   chooseQuote();
   renderQuote(currentQuote);
 });
 
 // event handlers
+
+
 
 function renderQuote(quote) {
   
@@ -50,3 +66,5 @@ function getRandomQuote(array) {
 function getRandomIndex(array) {
   return Math.floor(Math.random() * array.length)
 }
+
+// this.setTimeout(loadLoginPage, 3.0 * 1000)
