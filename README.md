@@ -2,7 +2,7 @@
 
 ### Abstract:
 
-The user is first taken to a login page with a delay so that they can get a second to see the application. Once the login page is filled out and the "Sign In" button is clicked they are granted access to the application. The application will take their name input value and have a welcome messsage with their name.The application will generate a quote when the "Receive Message" button is clicked.   The user must fist click one of the radio buttons, either "affirmation" or "mantra" and then clicked the blue "Recieve Message button". Each time the user clicks that button the main section will be replaced with a new quote. 
+The user is first taken to a login page with a delay so that they can get a second to see the application then the login page pops up. Once the login page is filled out and the "Sign In" button is clicked they are granted access to the application. The application will take their first name input value and have a welcome messsage with their name.The application will generate a quote when the "Receive Message" button is clicked.   The user must first click one of the radio buttons, either "affirmation" or "mantra" and then clicked the blue "Recieve Message button". Each time the user clicks that button the main section will be replaced with a new quote. 
 
 ### Installation Instructions:
 
@@ -22,11 +22,11 @@ If you want to check it out on github the link is here: https://github.com/zenmc
 
 ### Preview of App:
 
-<img width="1440" alt="Screenshot 2023-07-22 at 10 07 23 AM copy" src="https://github.com/zenmcmillan/self-care-center/assets/121205752/8f00ec51-e0c5-417a-99af-d820fd6903f7">
+<img width="721" alt="Screenshot 2023-07-22 at 10 30 12 AM" src="https://github.com/zenmcmillan/self-care-center/assets/121205752/db0578f4-71e2-40d9-81f8-802145d44787">
 
 ### Context:
 
-I am three weeks into Mod1 and it has taken me 4 days working a few hours after class to complete this project.
+I am three weeks into Module 1 at the Turing School of Software and Design Front End Engineer Program and it has taken me 4 days working a few hours after class to complete this project.
 
 ### Contributors:
 
