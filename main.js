@@ -18,7 +18,9 @@ var loginPassword = document.querySelector('.login-password')
 // data model
 
 var currentQuote;
+var currentAccount;
 var accounts = []
+
 
 // event listeners
 
@@ -37,9 +39,7 @@ signInButton.addEventListener('click', function() {
 
 // event handlers
 
-// function saveAccountData() {
-//   var account = 
-// }
+
 function removeLoginPage() {
   loginContainer.setAttribute("id", "hidden") 
   for (var i = 0; i < page.length; i++) {
@@ -47,17 +47,16 @@ function removeLoginPage() {
   } 
 }
 
-
 function createAccount(firstName, lastName, email, password) {
-  var account = {
+   currentAccount = {
   firstName: firstName,
   lastName: lastName,
   emailAddress: email,
   password: password,
   }
-  accounts.push(account)
+  accounts.push(currentAccount)
   console.log(accounts)
-  return console.log(account)
+  return console.log(currentAccount)
 }
 
 
