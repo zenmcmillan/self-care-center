@@ -13,7 +13,6 @@ gradient (#1e4f70, #f7e4bf);
 }
 
 body {
- 
   background: linear-gradient(#134d71,#78a7c6,#f7e4bf);
   height: 100vh;
   width: 100vw;
@@ -24,7 +23,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
- align-items: center;
+  align-items: center;
   color: #ffffff;
   font-size: 40px;
  padding-top: 20px;
@@ -35,8 +34,6 @@ body {
   font-size: 25px;
   font-weight: 400;
 }
-
-
 
 .subtitle {
   text-align: center;
@@ -86,14 +83,14 @@ body {
 }
 
 .quote-space {
-display: flex;
-justify-content: center;
- height: 150px;
- width: 800px;
- background-color: #ffffff;
- margin-left: 340px;
- margin-top: 100px;
- border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  height: 150px;
+  width: 800px;
+  background-color: #ffffff;
+  margin-left: 340px;
+  margin-top: 100px;
+  border-radius: 10px;
 }
 
 .meditation-bell {
@@ -126,7 +123,6 @@ justify-content: center;
   justify-content: space-evenly;
   align-items: center;
   text-align: center;
-
   height: 480px;
   font-size: 20px;
   width: 450px;
@@ -153,7 +149,6 @@ justify-content: center;
   justify-content: center;
   align-items: center;
   height: 520px;
-
 }
 
 #the-button {
