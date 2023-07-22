@@ -22,6 +22,7 @@ If you want to check it out on github the link is here: https://github.com/zenmc
 
 ### Preview of App:
 [//]: <> (Provide ONE gif or screenshot of your application - choose the "coolest" piece of functionality to show off.)
+<img width="721" alt="Screenshot 2023-07-22 at 10 30 12 AM" src="https://github.com/zenmcmillan/self-care-center/assets/121205752/5baeb8bc-74a4-4950-ba8e-2a77a266f938">
 
 ### Context:
  I am three weeks into Mod1 and it has taken me 4 days working a few hours after class to complete this project.
