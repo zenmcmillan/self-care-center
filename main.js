@@ -9,38 +9,32 @@ var loginInputs = document.querySelectorAll('.login');
 var page = document.querySelectorAll('.page');
 var body = document.querySelector('body');
 var login = document.querySelector('.login');
-var hey = document.querySelectorAll('.hey');
 var signInButton = document.querySelector('.sign-in-button');
 var loginFirstName = document.querySelector('.login-first-name');
 var loginLastName = document.querySelector('.login-last-name')
 var loginEmail = document.querySelector('.login-email')
 var loginPassword = document.querySelector('.login-password')
 var title = document.querySelector('.title')
+
 // data model
 
 var currentQuote;
 var currentAccount;
 var accounts = []
 
-
 // event listeners
 
 window.addEventListener('load', function() {
 hideLoginPage() // hide login so you can initially see the site
-showLoginPage()
-// this.setTimeout(showLoginPage, 1.6 * 1000) // at the end when the project is over do this. Delay is wasting time right now
+this.setTimeout(showLoginPage, 1.6 * 1000)
 });
 
 signInButton.addEventListener('click', function() {
  createAccount(loginFirstName.value, loginLastName.value, loginEmail.value, loginPassword.value) //data model
  removeLoginPage()
- 
-  //saveInputData(loginFirstName,)
 });
 
-
 // event handlers
-
 
 function removeLoginPage() {
   loginContainer.setAttribute("id", "hidden") 
@@ -67,7 +61,6 @@ function createAccount(firstName, lastName, email, password) {
   return console.log(currentAccount)
 }
 
-
 function showLoginPage() {
   if (loginContainer.getAttribute("id") === "hidden")
   loginContainer.removeAttribute("id")
@@ -76,11 +69,10 @@ function showLoginPage() {
   }
 }
 
-
 function hideLoginPage() {
   loginContainer.setAttribute("id", "hidden")
   for (var i = 0; i < page.length; i++) {
-    page[i].classList.add('hidden');
+    page[i].classList.remove('hidden');
   }  
 }
   
@@ -126,4 +118,3 @@ function getRandomIndex(array) {
 }
 
 
-// this.setTimeout(showLoginPage, 1.6 * 1000)
