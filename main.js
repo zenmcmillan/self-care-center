@@ -6,21 +6,52 @@ var meditationBell = document.querySelector('.meditation-bell');
 var mainSection = document.querySelector('.quote-space');
 var loginContainer = document.querySelector('.second-container');
 var loginInputs = document.querySelectorAll('.login');
-var page = document.querySelectorAll('.page')
+var page = document.querySelectorAll('.page');
 var body = document.querySelector('body');
-var login = document.querySelector('.login')
-var hey = document.querySelectorAll('.hey')
-
-
+var login = document.querySelector('.login');
+var hey = document.querySelectorAll('.hey');
+var signInButton = document.querySelector('.sign-in-button');
+var loginFirstName = document.querySelector('.login-first-name');
+var loginLastName = document.querySelector('.login-last-name')
+var loginEmail = document.querySelector('.login-email')
+var loginPassword = document.querySelector('.login-password')
 // data model
 
 var currentQuote;
+var accounts = []
 
 // event listeners
+
 window.addEventListener('load', function() {
 hideLoginPage() // hide login so you can initially see the site
-this.setTimeout(showLoginPage, 1.5 * 1000)
+showLoginPage()
+// this.setTimeout(showLoginPage, 1.6 * 1000) // at the end when the project is over do this. Delay is wasting time right now
 });
+
+signInButton.addEventListener('click', function() {
+ createAccount(loginFirstName.value, loginLastName.value, loginEmail.value, loginPassword.value)
+
+  //saveInputData(loginFirstName,)
+});
+
+
+// event handlers
+
+// function saveAccountData() {
+//   var account = 
+// }
+
+function createAccount(firstName, lastName, email, password) {
+  var account = {
+  firstName: firstName,
+  lastName: lastName,
+  emailAddress: email,
+  password: password,
+  }
+  accounts.push(account)
+  console.log(accounts)
+  return console.log(account)
+}
 
 
 function showLoginPage() {
