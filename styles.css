@@ -106,6 +106,10 @@ justify-content: center;
   display: none;
 }
 
+#hidden {
+  display: none;
+}
+
 .login-container {
   display: flex;
   flex-direction: column;

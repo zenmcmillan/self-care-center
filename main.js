@@ -4,10 +4,13 @@ var messageButton = document.querySelector('.receive-message-button');
 var radioButtons = document.querySelectorAll('.radio-buttons');
 var meditationBell = document.querySelector('.meditation-bell');
 var mainSection = document.querySelector('.quote-space');
-var loginContainer = document.querySelector('.login-container');
+var loginContainer = document.querySelector('.second-container');
 var loginInputs = document.querySelectorAll('.login');
 var page = document.querySelectorAll('.page')
 var body = document.querySelector('body');
+var login = document.querySelector('.login')
+var hey = document.querySelectorAll('.hey')
+
 
 // data model
 
@@ -15,23 +18,30 @@ var currentQuote;
 
 // event listeners
 window.addEventListener('load', function() {
- hideNonLoginClasses()
+hideLoginPage() // hide login so you can initially see the site
+this.setTimeout(showLoginPage, 1.5 * 1000)
 });
 
-function hideNonLoginClasses() {
+
+function showLoginPage() {
+  if (loginContainer.getAttribute("id") === "hidden")
+  loginContainer.removeAttribute("id")
   for (var i = 0; i < page.length; i++) {
     page[i].classList.add('hidden');
   }
 }
 
+
+function hideLoginPage() {
+  loginContainer.setAttribute("id", "hidden")
+}
+  
 messageButton.addEventListener('click', function() {
   chooseQuote();
   renderQuote(currentQuote);
 });
 
 // event handlers
-
-
 
 function renderQuote(quote) {
   
