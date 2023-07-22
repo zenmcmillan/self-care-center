@@ -21,19 +21,29 @@ body {
 }
 
 .title {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ align-items: center;
   color: #ffffff;
-  margin-top: 60px;
+  font-size: 40px;
+ padding-top: 20px;
 }
+
+.welcome {
+  font-style: italic;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+
 
 .subtitle {
   text-align: center;
-  color: #ffffff;
-  margin-top: 80px;  
+  color: #ffffff;  
 }
 
 .middle {
-
   margin-left: 460px;
   background-color: white;
   height: 90px;
@@ -104,5 +114,69 @@ justify-content: center;
 
 .hidden {
   display: none;
+}
+
+#hidden {
+  display: none;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+
+  height: 480px;
+  font-size: 20px;
+  width: 450px;
+  border-radius: 20px;
+  padding-top: 20px;
+  background: #f7e4bf;
+  color: black;
+  line-height: 35px;
+  font-weight: 600;
+}
+
+
+.login {
+  display: flex;
+  height: 45px;
+  width: 320px;
+  font-size: 20px;
+  border: 0;
+  border-radius: 5px;
+}
+
+.second-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 520px;
+
+}
+
+#the-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 170px; 
+  font-size: 25px;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  color: white;
+  font-weight: 700;
+  background: green;
+}
+
+.login-first-name {
+  margin-top: 10px;
+}
+
+input [type="password"] {
+  -webkit-text-security: circle;
+  letter-spacing: 2px;  
 }
 
