@@ -21,19 +21,29 @@ body {
 }
 
 .title {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ align-items: center;
   color: #ffffff;
-  margin-top: 60px;
+  font-size: 40px;
+ padding-top: 20px;
 }
+
+.welcome {
+  font-style: italic;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+
 
 .subtitle {
   text-align: center;
-  color: #ffffff;
-  margin-top: 80px;  
+  color: #ffffff;  
 }
 
 .middle {
-
   margin-left: 460px;
   background-color: white;
   height: 90px;
@@ -142,7 +152,8 @@ justify-content: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 540px;
+  height: 520px;
+
 }
 
 #the-button {
@@ -166,7 +177,6 @@ justify-content: center;
 
 input [type="password"] {
   -webkit-text-security: circle;
-  letter-spacing: 2px;
-  
+  letter-spacing: 2px;  
 }
 

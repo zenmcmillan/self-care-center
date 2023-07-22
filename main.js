@@ -15,6 +15,7 @@ var loginFirstName = document.querySelector('.login-first-name');
 var loginLastName = document.querySelector('.login-last-name')
 var loginEmail = document.querySelector('.login-email')
 var loginPassword = document.querySelector('.login-password')
+var title = document.querySelector('.title')
 // data model
 
 var currentQuote;
@@ -33,6 +34,7 @@ showLoginPage()
 signInButton.addEventListener('click', function() {
  createAccount(loginFirstName.value, loginLastName.value, loginEmail.value, loginPassword.value) //data model
  removeLoginPage()
+ 
   //saveInputData(loginFirstName,)
 });
 
@@ -44,7 +46,13 @@ function removeLoginPage() {
   loginContainer.setAttribute("id", "hidden") 
   for (var i = 0; i < page.length; i++) {
     page[i].classList.remove('hidden');
-  } 
+  }
+  title.innerHTML = '';
+
+  title.innerHTML +=
+  `<h1 class="title">✨ Self Care Center ✨ 
+  <p class="welcome" id="welcome-strong">Welcome ${currentAccount.firstName}</p>
+  </h1>`     
 }
 
 function createAccount(firstName, lastName, email, password) {
