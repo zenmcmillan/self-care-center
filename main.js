@@ -29,8 +29,8 @@ showLoginPage()
 });
 
 signInButton.addEventListener('click', function() {
- createAccount(loginFirstName.value, loginLastName.value, loginEmail.value, loginPassword.value)
-
+ createAccount(loginFirstName.value, loginLastName.value, loginEmail.value, loginPassword.value) //data model
+ removeLoginPage()
   //saveInputData(loginFirstName,)
 });
 
@@ -40,6 +40,13 @@ signInButton.addEventListener('click', function() {
 // function saveAccountData() {
 //   var account = 
 // }
+function removeLoginPage() {
+  loginContainer.setAttribute("id", "hidden") 
+  for (var i = 0; i < page.length; i++) {
+    page[i].classList.remove('hidden');
+  } 
+}
+
 
 function createAccount(firstName, lastName, email, password) {
   var account = {
@@ -65,6 +72,9 @@ function showLoginPage() {
 
 function hideLoginPage() {
   loginContainer.setAttribute("id", "hidden")
+  for (var i = 0; i < page.length; i++) {
+    page[i].classList.add('hidden');
+  }  
 }
   
 messageButton.addEventListener('click', function() {
@@ -108,4 +118,5 @@ function getRandomIndex(array) {
   return Math.floor(Math.random() * array.length)
 }
 
-// this.setTimeout(loadLoginPage, 3.0 * 1000)
+
+// this.setTimeout(showLoginPage, 1.6 * 1000)
