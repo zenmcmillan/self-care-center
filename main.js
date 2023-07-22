@@ -5,10 +5,7 @@ var radioButtons = document.querySelectorAll('.radio-buttons');
 var meditationBell = document.querySelector('.meditation-bell');
 var mainSection = document.querySelector('.quote-space');
 var loginContainer = document.querySelector('.second-container');
-var loginInputs = document.querySelectorAll('.login');
 var page = document.querySelectorAll('.page');
-var body = document.querySelector('body');
-var login = document.querySelector('.login');
 var signInButton = document.querySelector('.sign-in-button');
 var loginFirstName = document.querySelector('.login-first-name');
 var loginLastName = document.querySelector('.login-last-name')
@@ -25,18 +22,28 @@ var accounts = []
 // event listeners
 
 window.addEventListener('load', function() {
-hideLoginPage() // hide login so you can initially see the site
+hideLoginPage() 
 this.setTimeout(showLoginPage, 1.6 * 1000)
 });
 
 signInButton.addEventListener('click', function() {
- createAccount(loginFirstName.value, loginLastName.value, loginEmail.value, loginPassword.value) //data model
- removeLoginPage()
+ createAccount(loginFirstName.value, loginLastName.value, loginEmail.value, loginPassword.value) 
+ holdLoginPage()
 });
 
 // event handlers
+function holdLoginPage() {
+  if(loginFirstName.value.length && loginLastName.value.length && loginEmail.value.length && loginPassword.value.length > 8) {
+    removeLoginPage()
+  }
+ else if (!loginFirstName.value.length && !loginLastName.value.length && !loginEmail.value.length && !loginPassword.value.length > 8) {
+ 
+ }
+ window.alert('Sign up below.\n Make sure Password has at least 8 characters.')
+}
 
 function removeLoginPage() {
+  
   loginContainer.setAttribute("id", "hidden") 
   for (var i = 0; i < page.length; i++) {
     page[i].classList.remove('hidden');
