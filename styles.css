@@ -113,7 +113,7 @@ justify-content: center;
   align-items: center;
   text-align: center;
 
-  height: 460px;
+  height: 480px;
   font-size: 20px;
   width: 450px;
   border-radius: 20px;
@@ -129,13 +129,15 @@ justify-content: center;
   display: flex;
   height: 45px;
   width: 320px;
+  font-size: 20px;
+  border: 0;
+  border-radius: 5px;
 }
 
 .second-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  
   height: 540px;
 }
 
@@ -146,6 +148,7 @@ justify-content: center;
   height: 60px;
   width: 170px; 
   font-size: 25px;
+  margin-top: 10px;
   margin-bottom: 25px;
   border-radius: 10px;
   color: white;
@@ -157,4 +160,9 @@ justify-content: center;
   margin-top: 10px;
 }
 
+input [type="password"] {
+  -webkit-text-security: circle;
+  letter-spacing: 2px;
+  
+}
 
