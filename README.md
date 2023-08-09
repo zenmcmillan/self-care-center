@@ -4,6 +4,10 @@
 
 The user is first taken to a login page with a delay so that they can get a second to see the application then the login page pops up. Once the login page is filled out and the "Sign In" button is clicked they are granted access to the application. The application will take their first name input value and have a welcome messsage with their name.The application will generate a quote when the "Receive Message" button is clicked.   The user must first click one of the radio buttons, either "affirmation" or "mantra" and then clicked the blue "Recieve Message button". Each time the user clicks that button the main section will be replaced with a new quote. 
 
+### Application link:
+
+<https://zenmcmillan.github.io/self-care-center/>
+
 ### Installation Instructions:
 
 For MacBook Users
